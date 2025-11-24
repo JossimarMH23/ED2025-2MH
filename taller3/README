@@ -1,0 +1,40 @@
+Programa en C que implementa un Árbol Binario de Búsqueda (ABB) para gestionar la venta y reserva de tiquetes de lancha del muelle turístico. Utiliza el número de documento del viajero como clave principal de indexación y permite realizar operaciones de registro, consulta y eliminación de pasajeros.
+
+-------------------Instrucciones de Uso------------------------
+
+- Ejecuta el programa
+- Selecciona la opción del menú que desees usar
+- Registra pasajeros ingresando documento, destino y tipo de pasaje
+- Lista los pasajeros en diferentes órdenes (Inorden, Preorden, Postorden)
+- Consulta el total de pasajeros registrados
+- Elimina pasajeros por número de documento cuando sea necesario
+- El sistema valida automáticamente documentos duplicados
+
+--------------------Compilar y Ejecutar------------------------
+
+- Compilación: `gcc taller3.c -o taller3.exe`
+- Ejecución: `.\taller3.exe`
+
+Nota: Asegúrate de tener MinGW o GCC instalado en tu sistema.
+
+-----------------Características Técnicas----------------------
+
+- Lenguaje: C estándar
+- Librerías: stdio.h, stdlib.h
+- Estructura de datos: Árbol Binario de Búsqueda
+- Validación: No permite documentos duplicados
+- Destinos disponibles: Timbiquí, Juanchaco, Tumaco, Guapi
+- Tipos de pasaje: Ida, Ida y Regreso
+- Recorridos: Inorden, Preorden, Postorden (recursivos)
+- Eliminación: Maneja los tres casos (sin hijos, un hijo, dos hijos)
+
+-------------------Menú del Sistema----------------------------
+
+1. Registrar Pasajero
+2. Listar Pasajeros
+   - Inorden
+   - Preorden
+   - Postorden
+3. Contar Total de Pasajeros
+4. Eliminar Pasajero
+5. Salir
